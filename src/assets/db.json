@@ -1,0 +1,130 @@
+{
+  "events": [
+    {
+      "name": "Test",
+      "colorId": 6,
+      "id": 1
+    },
+    {
+      "name": "Test 2",
+      "colorId": 2,
+      "id": 2
+    },
+    {
+      "name": "Test 3",
+      "colorId": 5,
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "eventId": 1,
+      "text": "Test 1",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "eventId": 1,
+      "text": "Test 2",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "eventId": 1,
+      "text": "Test 3",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "eventId": 2,
+      "text": "Test 1",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "eventId": 2,
+      "text": "Test 2",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "eventId": 2,
+      "text": "Test 3",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "eventId": 2,
+      "text": "Test 4",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "eventId": 3,
+      "text": "Test 1",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "eventId": 3,
+      "text": "Test 2",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "eventId": 3,
+      "text": "Test 3",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "eventId": 3,
+      "text": "Test 4",
+      "completed": true,
+      "id": 11
+    }
+  ],
+  "date": [],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#9b9fa5",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#f84f4f",
+      "name": "red"
+    },
+    {
+      "id": 3,
+      "hex": "#ffb04a",
+      "name": "orange"
+    },
+    {
+      "id": 4,
+      "hex": "#EBE306",
+      "name": "yellow"
+    },
+    {
+      "id": 5,
+      "hex": "#01c452",
+      "name": "green"
+    },
+    {
+      "id": 6,
+      "hex": "#169ef0",
+      "name": "blue"
+    },
+    {
+      "id": 7,
+      "hex": "#313baa",
+      "name": "darkBlue"
+    },
+    {
+      "id": 8,
+      "hex": "#CC00CC",
+      "name": "purple"
+    }
+  ]
+}

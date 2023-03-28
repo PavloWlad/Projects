@@ -1,0 +1,122 @@
+.planir__event {
+    $self: &;
+    
+    margin-bottom: 30px;
+  
+    &__add-button {
+      opacity: 0.4;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+  
+    li {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px 12px;
+      transition: background-color 0.15s ease-in-out;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+  
+      &:hover #{$self}__remove-icon {
+        opacity: 0.2;
+      }
+  
+      #{$self}__remove-icon {
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+  
+      span {
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 160px;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.5);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        transition: background-color 0.15s ease-in-out; 
+      }
+
+      &.active {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: black;
+
+        i {
+          svg {
+            path {
+              fill: black;
+            }
+          }
+        }
+      }
+
+      i {
+        display: inline-flex;
+        margin-right: 8px;
+        svg {
+          margin-left: 3px;
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+ 
+  @media only screen and (max-width:768px) {
+    .planir__event {
+      $self: &;
+      
+      li {
+        font-size: 20px;
+
+        span {
+          margin-left: 8px;
+        }
+
+        &:hover #{$self}__remove-icon {
+          opacity: 0;
+        }
+
+        &.active {
+          #{$self}__remove-icon {
+            opacity: 0.5;
+          }
+        }
+
+        &:hover {
+          background: transparent;
+        }
+
+        &.active {
+          background: #f9f9f9;
+        }
+
+        i {
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .marker {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }

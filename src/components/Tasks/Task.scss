@@ -1,0 +1,292 @@
+.tasks {
+  border-bottom: 1px solid #e2dfdf;
+  
+  a {
+    text-decoration: none;
+  }
+
+  .tasks-date {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fira Sans';
+    
+    &__event-date {
+      margin-top: 35px;
+    }
+  }
+
+    &__title {
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 39px;
+      padding-top: 30px;
+      font-family: 'Montserrat', sans-serif;
+      
+      &:hover {
+        img {
+          opacity: 0.2;
+        }
+      }
+  
+      img {
+        opacity: 0.2;
+        cursor: pointer;
+        margin-left: 15px;
+        transition: opacity 0.15s ease-in-out;
+  
+        &:hover {
+          transition: opacity 0.15s ease-in-out;
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    &__form {
+      margin-top: 40px;
+      margin-bottom: 35px;
+  
+      &-block {
+        .button {
+          margin-right: 10px;
+          margin-top: 15px;
+        }
+      }
+  
+      &-new {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0.4;
+        transition: opacity 0.15s ease-in-out;
+        margin-bottom: 35px;
+        width: 140px;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+  
+        img {
+          width: 14px;
+          height: 14px;
+          margin-left: 4px;
+        }
+  
+        span {
+          font-size: 16px;
+          margin-left: 13px;
+        }
+      }
+    }
+  
+    &__items {
+      margin-top: 30px;
+      transition: opacity 15s ease-in-out;
+  
+      h2 {
+        font-weight: 500;
+        font-size: 22px;
+        font-family: 'Fira Sans';
+        position: relative;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+      }
+  
+      &-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        box-shadow:0px 0px 5px 1px rgba(0,0,0,0.11);
+        -webkit-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.11);
+        -moz-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.11);
+        padding: 6px 20px 6px 20px;
+        position: relative;
+        background-color: #ffffff;
+  
+        &:hover &-actions {
+          opacity: 1;
+          transition: opacity 0.15s ease-in-out;
+        }
+  
+        &-actions {
+          display: flex;
+          opacity: 0.4;
+          transition: opacity 0.15s ease-in-out;
+  
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: lighten(#f4f6f8, 2%);
+            border-radius: 50px;
+            margin-left: 5px;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: darken(#f4f6f8, 2%);
+              svg {
+                opacity: 0.9;
+              }
+            }
+  
+            svg {
+              width: 11px;
+              height: 11px;
+              opacity: 0.4;
+            }
+          }
+        }
+  
+        p {
+          margin-left: 15px;
+          border: 0;
+          font-size: 21px;
+          width: 100%;
+          color: #0000008e;
+          padding-right: 10px;
+        }
+      }
+    }
+  
+    .checkbox {
+      input {
+        display: none;
+      }
+  
+      svg {
+        transition: opacity 0.15s ease-in-out;
+        width: 13px;
+        height: 13px;
+      }
+  
+      input:checked + label {
+        svg {
+          opacity: 1;
+        }
+      }
+  
+      &:hover {
+        label {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+  
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid #e8e8e8;
+        border-radius: 30px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+  
+        svg {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .tasks {
+
+      &__title {
+        font-size: 27px;
+
+        img {
+          &:hover {
+            opacity: 0.2;
+          }
+        }
+      }
+
+      &__form {
+        &-block {
+          .button {
+            width: auto;
+          }
+        }
+
+        &-new {
+          &:hover {
+            opacity: 0.4;
+          }
+        }
+      }
+
+      &__items {
+        &-row {
+
+          &:hover &-actions {
+            opacity: 0.7;
+          }
+
+          &-actions {
+            opacity: 0.7;
+          
+            div {
+              width: 20px;
+              height: 20px;
+              background: none;
+              margin-left: 10px;
+
+              &:hover {
+                background-color: transparent;
+                svg {
+                  opacity: 0.4;
+                }
+              }
+
+              svg {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          .checkbox {
+
+            svg {
+              width: 10px;
+              height: 10px;
+            }
+
+            &:hover {
+              label {
+                svg {
+                  opacity: 0;
+                }
+              }
+            }
+
+            label {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .tasks {
+      &__form {
+        &-block {
+          .button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

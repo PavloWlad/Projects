@@ -1,0 +1,39 @@
+.marker {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 30px;
+  
+    &--grey {
+      background-color: #bcc5d1;
+    }
+  
+    &--red {
+      background-color: #f84f4f;
+    }
+
+    &--orange {
+      background-color: #ffb04a;
+    }
+
+    &--yellow {
+      background-color: #EBE306;
+    }
+  
+    &--green {
+      background-color: #01c452;
+    }
+
+    &--blue {
+      background-color: #169ef0;
+    }
+
+    &--darkBlue {
+      background-color: #313baa;
+    }
+
+    &--purple {
+      background-color: #CC00CC;
+    }
+  }
+
